@@ -29,5 +29,8 @@ a list of test statistic, degrees of freedom, and p-value
 \code{test_het} returns the test statistic according to the methods chosen
 }
 \examples{
+yk <- rnorm(10)
+sk <- rchisq(10, 1)
+dfk <- rpois(10, 100)
 test_het(yk, sk, dfk, method="CQ")
 }

@@ -17,6 +17,9 @@
 #' @export
 #'
 #' @examples
+#' yk <- rnorm(10)
+#' sk <- rchisq(10, 1)
+#' dfk <- rpois(10, 100)
 #' test_het(yk, sk, dfk, method="CQ")
 test_het <- function(Yk, Sk, dfk,
                      method=c("CQ", "Bliss", "CF"),

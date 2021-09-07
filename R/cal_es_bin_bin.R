@@ -85,7 +85,7 @@ cal_es_bin <- function(y, x, measure, design = "between-subject"){
     index     = index+1
   }
   if("RelativeRisk" %in% measure){
-    if(design="between-subject"){
+    if(design=="between-subject"){
       if(n10==0 | n21==0 | n11==0 | n20==0){
         OR        <- (n10+0.5)*(n21+0.5)/(n11+0.5)*(n20+0.5)
         S2        <- 1/(n10+n11+1)+1/(n20+n21+1)+1/(n10+n20+1)+1/(n11+n21+1)
